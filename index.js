@@ -37,24 +37,24 @@ bot.on('message', message => {
             message.channel.send('sarosh xD and || ali abbass ||')
             break;
         case 'clear':
-            if(message.member.roles.cache.some(role => role.name === 'Owners')) 
-            if (!args[1]) return message.reply('Error please definde second arg')
+            if (message.member.roles.cache.some(role => role.name === 'Owners'))
+                if (!args[1]) return message.reply('Error please definde second arg')
             message.channel.bulkDelete(args[1]);
 
             break;
         case 'help':
-            const embed = new Discord.MessageEmbed() 
+            const embed = new Discord.MessageEmbed()
                 .setTitle('Commands')
                 .addField('Prefix', '$')
-                .addField('$ping ' , 'Replies with Pong!')
-                .addField('$clear', 'Clears a number of messages ( admin use only )' )
+                .addField('$ping ', 'Replies with Pong!')
+                .addField('$clear', 'Clears a number of messages ( admin use only )')
                 .addField('info version', 'The Version which the bot is currently in')
                 .addField('nubkon', 'Declares the noob :)')
                 .addField('dhokebaaz', 'Declares the Dhokebaaz :( ')
                 .setColor(0xD71D85)
                 .setThumbnail(message.author.displayAvatarURL())
                 .setFooter('Sarosh nub')
-            message.channel.send(embed);
+            message.author.send(embed);
             break;
         case 'send':
             const attachment = new Discord.MessageAttachment("https://hips.hearstapps.com/countryliving.cdnds.net/17/47/1511194376-cavachon-puppy-christmas.jpg");
@@ -72,7 +72,6 @@ bot.on('message', message => {
         case 'sabki,ammi':
             message.channel.send('teen')
             break;
-        
 
     }
 
