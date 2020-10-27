@@ -69,14 +69,7 @@ bot.on('message', message => {
         case 'sabki,ammi':
             message.channel.send('teen')
             break;
-        case 'help':
-            const Embed = new Discord.MessageEmbed()
-                .setTitle('List of commands')
-                .setColor(0xFF0000)
-                .setDescription('Prefix : $');
-                .addField('Commands')
-            message.author.send(Embed);
-            break;
+        
 
     }
 
