@@ -9,6 +9,7 @@
   "author": "rayyan",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.4.0"
+    "discord.js": "^12.4.0",
+    "discord.js-pagination": "^1.0.2"
   }
 }
