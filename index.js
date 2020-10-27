@@ -44,10 +44,13 @@ bot.on('message', message => {
             break;
         case 'embed':
             const embed = new Discord.MessageEmbed() 
-                .setTitle('User Information')
-                .addField('Player name', message.author.username)
-                .addField('Version', '1.0.0')
-                .addField('Current Server', message.guild.name)
+                .setTitle('Commands')
+                .addField('Prefix : $')
+                .addField('$ping  : Replies with Pong!')
+                .addField('$clear : Clears a number of messages ( admin use only )' )
+                .addField('info version')
+                .addField('nubkon : Declares the noob :)')
+                .addField('dhokebaaz : Declares the Dhokebaaz :( ')
                 .setColor(0xD71D85)
                 .setThumbnail(message.author.displayAvatarURL())
                 .setFooter('Sarosh nub')
@@ -64,7 +67,7 @@ bot.on('message', message => {
 
             break;
         case 'dhokebaaz':
-            message.channel.send('teen')
+            message.channel.send('Roseeee :(')
             break;
         case 'sabki,ammi':
             message.channel.send('teen')
