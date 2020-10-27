@@ -42,7 +42,7 @@ bot.on('message', message => {
             message.channel.bulkDelete(args[1]);
 
             break;
-        case 'embed':
+        case 'help':
             const embed = new Discord.MessageEmbed() 
                 .setTitle('Commands')
                 .addField('Prefix : $')
