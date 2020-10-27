@@ -1,7 +1,8 @@
 const pagination = require('discord.js-pagination');
 const Discord = require('discord.js');
-
+const PREFIX = '$';
 module.exports = {
+    
     name: "help",
     description: "The help command, what do you expect?",
 
@@ -41,5 +42,6 @@ module.exports = {
         const timeout = '120000';
 
         pagination(message, pages, emojiList, timeout)
-    }
+        }
+    
 }
