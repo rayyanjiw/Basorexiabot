@@ -69,11 +69,11 @@ bot.on('message', message => {
         case 'sabki,ammi':
             message.channel.send('teen')
             break;
-        case 'surprise':
+        case 'help':
             const Embed = new Discord.MessageEmbed()
-                .setTitle('midna noob')
+                .setTitle('List of commands')
                 .setColor(0xFF0000)
-                .setDescription('teeen dhokebaz');
+                .setDescription('Prefix : $');
             message.author.send(Embed);
             break;
 
