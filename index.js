@@ -74,7 +74,7 @@ bot.on('message', message => {
                 .setTitle('List of commands')
                 .setColor(0xFF0000)
                 .setDescription('Prefix : $');
-                .setDescription('$ping');
+                .addField('Commands')
             message.author.send(Embed);
             break;
 
