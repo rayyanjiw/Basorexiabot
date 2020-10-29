@@ -22,7 +22,8 @@ bot.on('ready', () => {
             member.hasPermission('ADMINISTRATOR') ||
             member.hasPermission('BAN_MEMBERS')  
         ) {
-            console.log('Works')
+        const target = mentions.users.first()
+        console.log(target)
         } else {
             message.channel.send(
                 `<@${member.id}> You do not have permission to use this command.`
