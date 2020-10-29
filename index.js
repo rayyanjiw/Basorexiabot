@@ -37,8 +37,10 @@ bot.on('message', message => {
             message.channel.send('sarosh xD and || ali abbass ||')
             break;
         case 'clear':
-            if (message.member.roles.cache.some(role => role.name === 'Owners'))
-                if (!args[1]) return message.reply('Error please definde second arg')
+            if (message.member.hasPermission("ADMINISTRATOR"))
+                message.channel.send('You need admin rights to execute this command')
+            else
+            if (!args[1]) return message.reply('Error please definde second arg')
             message.channel.bulkDelete(args[1]);
 
             break;
