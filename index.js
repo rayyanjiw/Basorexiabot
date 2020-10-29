@@ -5,7 +5,6 @@ const {
     MessageEmbed
 } = require('discord.js');
 const bot = new Client();
-const config = require('./config.json')
 const command = require('./command')
 const usedCommandRecently = new Set();
 
