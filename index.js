@@ -5,7 +5,6 @@ const {
     MessageEmbed
 } = require('discord.js');
 const bot = new Client();
-const command = require('./command')
 const usedCommandRecently = new Set();
 
 const PREFIX = '$';
@@ -13,23 +12,6 @@ const PREFIX = '$';
 bot.on('ready', () => {
     console.log('This Bot is online!');
     bot.user.setActivity('Rejection with 69 others')
-
-    command(client, 'ban', (message) => {
-        const { member, mentions} = message
-
-        if (
-            member.hasPermission('ADMINISTRATOR') ||
-            member.hasPermission('BAN_MEMBERS')  
-        ) {
-        const target = mentions.users.first()
-        console.log(target)
-        } else {
-            message.channel.send(
-                `<@${member.id}> You do not have permission to use this command.`
-            )
-        }
-    })
-
 })
 
 
